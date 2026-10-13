@@ -1,0 +1,180 @@
+/* ============================================
+   Levels Page Styles
+   ============================================ */
+
+.level-card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+}
+
+.level-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-light);
+  transform: translateY(-4px);
+}
+
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.level-beginner {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+}
+
+.level-elementary {
+  background-color: #D1FAE5;
+  color: #047857;
+}
+
+.level-intermediate {
+  background-color: #FEF3C7;
+  color: #B45309;
+}
+
+.level-upper {
+  background-color: #FED7AA;
+  color: #C2410C;
+}
+
+.level-advanced {
+  background-color: #FECACA;
+  color: #DC2626;
+}
+
+.level-proficient {
+  background-color: #E9D5FF;
+  color: #7C3AED;
+}
+
+.level-desc {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.level-skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.level-skills li {
+  position: relative;
+  padding-left: var(--space-lg);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.level-skills li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+}
+
+/* Progression Timeline */
+.progression {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl) 0;
+}
+
+.progression-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.progression-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.progression-node {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+}
+
+.progression-step span {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  max-width: 80px;
+}
+
+.progression-line {
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary-light), var(--color-primary));
+  border-radius: 2px;
+  margin: 0 var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .progression {
+    flex-direction: column;
+  }
+
+  .progression-row {
+    flex-direction: row;
+  }
+
+  .progression-line {
+    width: 60px;
+    margin: 0 var(--space-sm);
+  }
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: var(--space-3xl) 0;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-banner h2 {
+  color: #fff;
+  margin-bottom: var(--space-md);
+}
+
+.cta-banner p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.15rem;
+  margin-bottom: var(--space-xl);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
