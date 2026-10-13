@@ -510,6 +510,18 @@ p:last-child {
   font-size: 0.875rem;
 }
 
+.footer-counter {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-md);
+  opacity: 0.7;
+  transition: opacity var(--transition-base);
+}
+
+.footer-counter:hover {
+  opacity: 1;
+}
+
 /* ============================================
    Page Hero
    ============================================ */
